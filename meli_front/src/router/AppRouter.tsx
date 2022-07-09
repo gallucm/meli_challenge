@@ -12,14 +12,12 @@ export const AppRouter = () => {
     return (
         <Router>
             <HeaderComponent />
-            <>
-                <Routes>
-                    <Route path='/' element={<HomePage />} />
-                    <Route path="/items" element={<SearchResultPage />} />
-                    <Route path="/items/:id" element={<ProductDetailPage />} />
-                    <Route path='*' element={<NotFoundPage />} />
-                </Routes>
-            </>
+            <Routes>
+                <Route path='/' element={<HomePage />} />
+                <Route path="/items" element={<SearchResultPage />} />
+                <Route path="/items/:id" element={<ProductDetailPage />} />
+                <Route path='*' element={<NotFoundPage />} />
+            </Routes>
         </Router>
     )
 }

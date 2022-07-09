@@ -3,13 +3,13 @@ header {
     height: 80px;
     background-color: $yellow;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     .container{
         margin: 10px;
         display: flex;
         align-items: center;
-        width: 60%;
+        width: 55%;
 
         img{
             margin-top: 5px;
