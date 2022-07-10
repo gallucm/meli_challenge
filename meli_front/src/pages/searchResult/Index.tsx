@@ -1,6 +1,5 @@
 
-import { LineSeparatorComponent } from "../../components/ui/LineSeparatorComponent";
-import { Util } from "../../helpers/Util";
+import { SearchResultsComponent } from "../../components/results/SearchResultsComponent";
 
 const dummy_data = [
   {
@@ -39,24 +38,6 @@ const dummy_data = [
 
 export const SearchResultPage = () => {
   return (
-    <div className="search-result-container">
-      {
-        dummy_data.map((product, idx) => (
-          <>
-            <div className="search-result-container__product">
-              <img src={product.image} alt="" />
-              <div className="search-result-container__product__info">
-                <h2> $ {Util.formatPrice(product.price)}</h2>
-                <p>{product.name}</p>
-              </div>
-              <div className="search-result-container__product__location">
-                <p>{product.location}</p>
-              </div>
-            </div>
-            <LineSeparatorComponent/>
-          </>
-        ))
-      }
-    </div>
+    <SearchResultsComponent products={dummy_data} />
   )
 }

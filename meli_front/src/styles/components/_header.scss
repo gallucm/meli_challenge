@@ -4,9 +4,8 @@ header {
     background-color: $yellow;
     display: flex;
     justify-content: space-around;
-
-    .container{
-        margin: 10px;
+    
+    .header-container{
         display: flex;
         align-items: center;
         width: 55%;

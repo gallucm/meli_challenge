@@ -5,7 +5,7 @@ import { SearchComponent } from '../search/SearchComponent';
 export const HeaderComponent = () => {
   return (
     <header>
-      <div className="container">
+      <div className="header-container">
         <Link to="/">
           <img src={logo} alt="logo" />
         </Link>
