@@ -1,8 +1,10 @@
 import express from 'express';
 
-const cors = require('cors');
+import cors from 'cors';
 const app = express();
 require('dotenv').config();
+
+import productRouter from './routes/product.routes';
 
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
@@ -14,10 +16,8 @@ app.use((req, res, next) => {
     next();
 });
 
-app.use('/api/v1/test', (req, res)=> {
-    res.send('Hello World');
-})
+app.use('/api', productRouter);
 
 app.options('*', cors())
 
-module.exports = app;
+export default app;
