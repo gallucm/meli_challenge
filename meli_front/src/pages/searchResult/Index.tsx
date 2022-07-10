@@ -1,5 +1,5 @@
 
-import { SearchResultsComponent } from "../../components/results/SearchResultsComponent";
+import { SearchResultsComponent } from "../../components/result/SearchResultsComponent";
 
 const dummy_data = [
   {

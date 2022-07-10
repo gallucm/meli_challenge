@@ -1,5 +1,5 @@
+import { DetailComponent } from "../../components/detail/DetailComponent"
 import { BreadCrumbComponent } from "../../components/ui/BreadCrumbComponent"
-import { Util } from "../../helpers/Util"
 
 const dummy_product = {
   id: "1",
@@ -36,35 +36,7 @@ export const ProductDetailPage = () => {
   return (
     <>
       <BreadCrumbComponent />
-      <div className="product">
-        <div className="product__content">
-          <div className="product__content__image">
-            <img src={dummy_product.image} alt={dummy_product.name} />
-          </div>
-          <div className="product__content__info">
-            <div className="product__content__info__quantity">
-              {dummy_product.status} - {dummy_product.quantity} vendidos
-            </div>
-            <div className="product__content__info__name">
-              {dummy_product.name}
-            </div>
-            <div className="product__content__info__price">
-              $ {Util.formatPrice(dummy_product.price)}
-            </div>
-            <button className="product__content__info__btn_comprar">
-              Comprar
-            </button>
-          </div>
-        </div>
-        <div className="product__description">
-          <div className="product__description__title">
-            Descripción del producto
-          </div>
-          <div className="product__description__text">
-            {dummy_product.description}
-          </div>
-        </div>
-      </div>
+      <DetailComponent product={dummy_product} />
     </>
   )
 }
