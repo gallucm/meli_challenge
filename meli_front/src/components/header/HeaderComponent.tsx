@@ -3,6 +3,7 @@ import logo from '../../assets/img/Logo_ML.png';
 import { SearchComponent } from '../search/SearchComponent';
 
 export const HeaderComponent = () => {
+
   return (
     <header>
       <div className="header-container">
