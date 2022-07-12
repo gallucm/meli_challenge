@@ -9,6 +9,7 @@
     flex-direction: column;
 
     .search-result-container__product {
+
         display: flex;
         flex-direction: row;
 
@@ -37,6 +38,8 @@
             p {
                 font-size: 18px;
                 color: $black;
+                cursor: pointer;
+                
             }
         }
 
@@ -61,6 +64,7 @@
     width: 55%;
     margin: auto;
     margin-bottom: 50px;
+    margin-top: 16px;
 
     height: auto;
 
