@@ -16,7 +16,7 @@ Clonar el proyecto
 Ir al directorio del proyecto
 
 ```bash
-  cd meli-challenge/meli-front
+  cd meli-challenge/meli_front
 ```
 
 Instalar dependencias
@@ -48,7 +48,7 @@ Clonar el proyecto
 Ir al directorio del proyecto
 
 ```bash
-  cd meli-challenge/meli-back
+  cd meli-challenge/meli_back
 ```
 
 Instalar dependencias
