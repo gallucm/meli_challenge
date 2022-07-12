@@ -2,12 +2,13 @@ import { LineSeparatorComponent } from "../ui/LineSeparatorComponent"
 import { ProductResultComponent } from "./ProductResultComponent"
 
 export const SearchResultsComponent = ({ products }: any) => {
+
     return (
-        <div className="search-result-container">
+        <div className="search-result-container" >
             {
-                products.map((product: any, idx: number) => (
+                products.map((product: any, idx: any) => (
                     <>
-                        <ProductResultComponent product={product} key={idx} />
+                        <ProductResultComponent key={idx} product={product} />
                         <LineSeparatorComponent />
                     </>
                 ))
