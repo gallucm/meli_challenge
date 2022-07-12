@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { Util } from "../../helpers/Util"
+import { IProduct } from "../../interfaces/IProduct";
 
-export const ProductResultComponent = ({ product }: any) => {
+export const ProductResultComponent = ({product}: IProduct) => {
     const { id } = product;
 
     const navigate = useNavigate();

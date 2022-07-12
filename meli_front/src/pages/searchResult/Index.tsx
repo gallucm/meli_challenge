@@ -6,7 +6,7 @@ import { BreadCrumbComponent } from "../../components/ui/BreadCrumbComponent";
 import { Loading } from "../../components/ui/Loading";
 import { useApi } from "../../hooks/useApi";
 
-export const SearchResultPage = ({onSearch}: any) => {
+export const SearchResultPage = () => {
 
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);

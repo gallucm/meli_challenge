@@ -9,16 +9,12 @@ import { SearchResultPage } from '../pages/searchResult/Index';
 
 export const AppRouter = () => {
 
-    const global = () => {
-        console.log("global");
-    }
-
     return (
         <Router>
             <HeaderComponent/>
             <Routes>
                 <Route path='/' element={<HomePage />} />
-                <Route path="/items" element={<SearchResultPage onSearch={global}/>} />
+                <Route path="/items" element={<SearchResultPage />} />
                 <Route path="/items/:id" element={<ProductDetailPage />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>
