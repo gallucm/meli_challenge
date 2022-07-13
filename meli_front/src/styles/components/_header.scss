@@ -19,4 +19,17 @@ header {
             }
         }
     }
+
+    // Resize
+    @media (max-width: $first_breakpoint) {
+        .header-container{
+            width: 60%;
+        }
+    }
+
+    @media (max-width: $third_breakpoint) {
+        .header-container {
+            width: 80%;
+        }
+    }
 }

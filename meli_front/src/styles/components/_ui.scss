@@ -56,6 +56,19 @@
           }
 
     }
+
+    // Resize
+    @media (max-width: $first_breakpoint) {
+        nav {
+            width: 60%;
+        }
+    }
+
+    @media (max-width: $third_breakpoint) {
+        nav {
+            width: 80%;
+        }
+    }
 }
 
 
