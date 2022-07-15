@@ -31,6 +31,12 @@ Iniciar proyecto
   npm start
 ```
 
+Iniciar Tests
+
+```bash
+  npm run test
+```
+
 El frontend corre en el puerto 3000.
 
 ## Backend
